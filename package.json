@@ -1,0 +1,26 @@
+{
+  "name": "minimal-rest-server",
+  "version": "1.0.0",
+  "description": "A minimal REST server used for testing REST clients",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "keywords": [],
+  "author": "Tim King <timk@jtimothyking.com> (http://sd.jtimothyking.com/)",
+  "license": "ISC",
+  "engines": {
+    "node": ">=14.5.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "server-destroy": "^1.0.1"
+  },
+  "devDependencies": {
+    "jest": "^26.1.0"
+  }
+}
