@@ -47,7 +47,7 @@ yet support CommonJS ("require") module syntax.
         expect(postData).toEqual([testData]);
     });
 
-    afterEach(() => {
-        httpServer.destroy();
+    afterEach(async () => {
+        await httpServer.destroy();
     });
 
